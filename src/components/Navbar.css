@@ -1,0 +1,114 @@
+/* src/components/Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 0.75rem 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand h1 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  letter-spacing: -0.025em;
+}
+
+.navbar-brand .logo {
+  margin-right: 0.75rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.navbar-brand a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.navbar-brand a:hover {
+  text-decoration: none;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-user {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.navbar-user-photo {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--primary-color);
+}
+
+.navbar-user-name {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.navbar-logout {
+  padding: 0.375rem 0.75rem;
+  background-color: white;
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+}
+
+.navbar-logout:hover {
+  background-color: #f9fafb;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.navbar-login {
+  display: inline-block;
+  padding: 0.375rem 0.875rem;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 0.375rem;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.navbar-login:hover {
+  background-color: var(--primary-hover);
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.75rem 1rem;
+  }
+
+  .navbar-brand h1 {
+    font-size: 1.125rem;
+  }
+
+  .navbar-user-name {
+    display: none;
+  }
+}
